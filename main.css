@@ -275,6 +275,49 @@ margin-top: 20px;
    .stars{
        color: #ff7039;
    }
+   .promo__image{
+       background-image:url(img/promo.jpg);
+       background-size: cover;
+       flex-shrink: 0;
+       background-position:center;
+       width: 50vw;
+   }
+   .promo__right{
+       background-color: #dd5f26;
+       padding: 160px 50px 160px 50px;
+   }
+   .promo{
+       display: flex;
+   }
+   .promo__right__card{
+       background-color: white;
+       padding: 30px 40px 30px 40px;
+       font-weight: 500;
+       border-radius: 50px;
+   }
+   .promo__right__card p{
+       opacity: 0.8;
+   }
+   .round{
+       color: #ec6b29;
+       font-size: 10px;
+       margin-right: 10px;
+   }
+   .promo__button{
+       background-color: #107b1c;
+       margin-top: 20px;
+       font-size: 18px;
+       padding: 15px 30px 15px 30px;
+       font-weight: 600;
+   }
+   .promo__button__image{
+       font-size: 15px;
+       margin-left: 5px;
+   }
+   .promo__button__container{
+       display: flex;
+       justify-content: center;
+   }
    @keyframes rotation{
        0%{
            transform: rotate(0deg);
@@ -290,6 +333,18 @@ animation-duration: 2s;
        animation-duration: 2s;
    }
 @media (max-width: 320px){
+    .promo{
+        flex-direction: column-reverse;
+        padding-top: 170px;
+    }
+    .promo__image{
+        height: 500px;
+        width: unset;
+        background-position: right;
+    }
+    .promo__right{
+        padding: 50px 10px 50px 10px;
+    }
     .features__savings-box{
         margin-right: unset;
         margin-bottom: 30px;
