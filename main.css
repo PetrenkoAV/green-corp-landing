@@ -63,6 +63,7 @@ body {
       background: url('img/back.png') no-repeat;
       background-position: center;
       background-size: cover;
+      position: relative;
   }
   .about h1 {
       font-size: 70px;
@@ -317,6 +318,12 @@ margin-top: 20px;
    .promo__button__container{
        display: flex;
        justify-content: center;
+   }
+   .orb-canvas{
+       position: absolute;
+       top: 0px;
+       right: 0px;
+       height: 100%;
    }
    @keyframes rotation{
        0%{
