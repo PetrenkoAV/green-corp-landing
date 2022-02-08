@@ -9,10 +9,18 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
+    position: fixed;
+    right: 0px;
+    left: 0px;
     background-color: #fff;
     top: 0;
     z-index: 1;
+    background:none;
+    transition: 0.25s, ease;
+  }
+  .header__scrolled{
+      background: white;
+      box-shadow: 0, 12px, 34px, -11px, rgb(65, 62, 101 / 10%);
   }
 
   .header__logo {
@@ -58,7 +66,7 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding-top: 115px;
+      padding-top: 200px;
       padding-bottom: 115px;
       background: url('img/back.png') no-repeat;
       background-position: center;
@@ -334,7 +342,7 @@ margin-top: 20px;
        }
    }
    .animate__animated.animate__fadeInLeft{
-animation-duration: 2s;
+       animation-duration: 2s;
    }
    .animate__animated.animate__fadeInRight{
        animation-duration: 2s;
